@@ -4,4 +4,4 @@ Commit 2: Inicio de sesion y cambios a la pagina main.
 
 Commit 3: añadido de README.
 
-Commit 4: Paginas consumibles, coleccionables agregadas y cambios en pagina main. 
+Commit 4: Paginas consumibles, coleccionables agregadas y cambios en pagina main, Icono en pestaña del logo. 
