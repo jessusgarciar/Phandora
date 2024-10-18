@@ -59,7 +59,7 @@
         <div class="row">
             <div class="col-sm12 col-md-4 col-lg-4 col-xl-4">
                         <!-- Contact form-->
-                        <div class="bg-dark rounded-2 py-5 px-4 px-md-1">
+                        <div class="bg-dark rounded-4 py-5 px-4 px-md-1">
                             <div class="text-center mb-5">
                                 <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><img class="img-fluid w-80" src="img\logo.png"></img></div>
                                 <h1 class="fw-bolder" style="color: white">Registro</h1>
@@ -74,59 +74,42 @@
                                     <!-- To make this form functional, sign up at-->
                                     <!-- https://startbootstrap.com/solution/contact-forms-->
                                     <!-- to get an API token!-->
-                                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <div id="success"></div>
+                                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
                                         <!-- Name input-->
-                                        <div class="form-floating mb-3">
-                                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <div class="form-floating mb-3 control-group">
+                                            <input class="form-control border-0 p-4" id="name" type="text" placeholder="Ingresa tu nombre..." required="required" data-validation-required-message="Porfavor ingresa tu nombre"/>
                                             <label for="name">Nombre Completo.</label>
-                                            <div class="invalid-feedback" data-sb-feedback="name:required">Nombre requerido</div>
+                                            <p class="help-block text-danger"></p>
                                         </div>
                                         <!-- Email address input-->
-                                        <div class="form-floating mb-3">
-                                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <div class="control-group form-floating mb-3">
+                                            <input class="form-control border-0 p-4" id="email" type="email" placeholder="Ingresa tu Email" required="required" data-validation-required-message="Porfavor ingresa tu Email" />
                                             <label for="email">Correo Electronico.</label>
-                                            <div class="invalid-feedback" data-sb-feedback="email:required">El correo es requerido.</div>
-                                            <div class="invalid-feedback" data-sb-feedback="email:email">Correo no valido.</div>
+                                            <p class="help-block text-danger"></p>
+
                                         </div>
                                         <!-- Phone number input-->
-                                        <div class="form-floating mb-3">
-                                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <div class="form-floating mb-3 control-group">
+                                            <input class="form-control border-0 p-4" id="number" type="number" placeholder="(123) 456-7890" required="required" data-validation-required-message="Porfavor ingresa un numero"/>
                                             <label for="phone">Numero de celular</label>
-                                            <div class="invalid-feedback" data-sb-feedback="phone:required">El numero de celular es requerido.</div>
+                                            <p class="help-block text-danger"></p>
                                         </div>
                                         <!-- Message input-->
-                                        <div class="form-floating mb-3">
-                                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <div class="form-floating mb-3 control-group">
+                                            <textarea class="form-control border-0 p-4" id="message" type="text" placeholder="Enter your message here..." rows="3" required="required" data-validation-required-message="Ingresa un mensaje"></textarea>
                                             <label for="message">Mensaje.</label>
-                                            <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requerido.</div>
+                                            <p class="help-block text-danger"></p>
                                         </div>
-                                        <!-- Submit success message-->
-                                        <!---->
-                                        <!-- This is what your users will see when the form-->
-                                        <!-- has successfully submitted-->
-                                        <div class="d-none" id="submitSuccessMessage">
-                                            <div class="text-center mb-3">
-                                                <div class="fw-bolder">Form submission successful!</div>
-                                                To activate this form, sign up at
-                                                <br />
-                                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                            </div>
-                                        </div>
-                                        <!-- Submit error message-->
-                                        <!---->
-                                        <!-- This is what your users will see when there is-->
-                                        <!-- an error submitting the form-->
-                                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al mandar el mensaje!</div></div>
-                                        <!-- Submit Button-->
-                                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Registrarse</button></div>
+                                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="sendMessageButton" type="submit">Registrarse</button></div>
                                     </form>
                                 </div>
                             </div>
                         </div>        
             </div>
-            <div class="col-sm12 col-md-8 col-lg-8 col-xl-8 ">
+            <div class="col-sm12 col-md-8 col-lg-8 col-xl-8 rounded-4">
             <!-- Blog Detail Start -->
-                <div class="bg-dark rounded-2">
+                <div class="bg-dark rounded-4">
                     <div class="position-relative">
                         <img class="img-fluid w-100" src="img\feature.png" alt="">
                         <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
@@ -175,7 +158,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   
-    <script src="registro/contact.js"></script>
-    <script src="registro/jqBootstrapValidation.min.js"></script>
+    <script src="registro\contact.js"></script>
+    <script src="registro\jqBootstrapValidation.min.js"></script>
 </body>
 </html>
