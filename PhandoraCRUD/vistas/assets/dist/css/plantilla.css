@@ -1,0 +1,26 @@
+/* Para cambiar el fondo del contenedor principal */
+.content-wrapper {
+    background: #ff0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.main-footer {
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: white; /* Color del texto en el footer */
+}
+
+
+.main-sidebar .nav-link.active{
+    background: #ff0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
